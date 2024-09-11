@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    margin: auto;
+    padding-block: 1rem;
+    padding-inline: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    height: 7vh;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.navbar ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #1f1f1f;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+    color: #4c73ed;
+}
+
+/* Opacity transitions */
+.opacity-0 {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+.opacity-100 {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+/* Rotation transitions */
+.rotate-0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg) !important;
+    transition: transform 0.3s ease !important;
+}
+.rotate-180 {
+    transform: translateX(-50%) translateY(-50%) rotate(180deg) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.iconMenu {
+    font-size: 1.5rem;
+    color: #010101;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg); 
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    z-index: 5;
+}
+
+.iconClose {
+    color: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 5;
+}
+
+.mobileMenu {
+    display: none;
+    width: 2.4rem; /* Tailwind 'w-[2.4rem]' */
+    height: 2.4rem; /* Tailwind 'h-[2.4rem]' */
+    position: relative; /* Tailwind 'relative' */
+    cursor: pointer; /* Tailwind 'cursor-pointer' */
+    z-index: 1; /* Tailwind 'z-[1]' */
+}
+
+.menu {
+    display: none; /* Tailwind 'md:hidden' */
+}
+
+.menu {
+    position: absolute; /* Tailwind 'absolute' */
+    background-color: #1f1f1f; /* Tailwind 'bg-[#1f1f1f]' */
+    right: 1rem; /* Tailwind 'right-0' */
+    top: 0.5rem; /* Tailwind 'top-[1.25rem]' */
+    width: 10rem; /* Tailwind 'w-[10rem]' */
+    height: auto; /* Tailwind 'h-fit' */
+    padding: 3rem 0; /* Tailwind 'py-[3rem]' */
+    border-radius: 0.5rem; /* Tailwind 'rounded-lg' */
+}
+
+.menu ul {
+    display: none; /* Tailwind 'md:hidden' */
+}
+
+.menu ul {
+    flex-direction: column; /* Tailwind 'flex-col' */
+    justify-content: center; /* Tailwind 'justify-center' */
+    align-items: center; /* Tailwind 'items-center' */
+    width: 100%; /* Tailwind 'w-[100%]' */
+    height: 100%; /* Tailwind 'h-[100%]' */
+    font-size: 1.15rem; /* Tailwind 'text-[1.15rem]' */
+    gap: 1.25rem; /* Tailwind 'gap-5' */
+}
+
+.menu ul li a{
+    color: #fcfcfc;
+}
+
+
+/* Clip-path transitions */
+.clipPath-Active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path 0.3s ease;
+}
+.clipPath-Desactive {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Full viewport height */
+    background-color: #181818; /* Dark background */
+    color: #fcfcfc; /* Light text */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 6rem; /* Larger heading */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.hero h1 span{
+    color: #4C73ED;
+}
+
+.hero h4 {
+    font-size: 3rem; /* Subheading */
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.interSection{
+    height: 6vh;
+    background-color: #181818;
+}
+
+.interSection2{
+    height: 15vh;
+    background-color: #181818; /* Light background for contrast */
+}
+
+.interSection3{
+    height: 4rem;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+#section2 {
+    background-color: #f5f5f5;
+}
+
+.section2{
+    padding: 4rem 2rem; /* Add padding for spacing */
+    padding-bottom: 0rem !important;
+    color: #1f1f1f; /* Dark text */
+    text-align: center;
+}
+
+.section2 h3 {
+    font-size: 3rem; /* Larger heading size */
+    margin-bottom: 1.5rem; /* Space below heading */
+    font-weight: bold;
+    color: #333;
+}
+
+.section2 p {
+    font-size: 1.30rem; /* Slightly larger than default paragraph text */
+    line-height: 1.6; /* Improve readability */
+    max-width: 800px; /* Limit paragraph width */
+    margin: 0 auto; /* Center the paragraph */
+    color: #555;
+}
+
+
+.section3 {
+    padding: 2rem; /* Add some padding around the section */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.section3 h1 {
+    text-align: center;
+    margin-bottom: 2rem; /* Space below the heading */
+    color: #333;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns by default, adjusts for smaller screens */
+    gap: 1.5rem; /* Space between items */
+}
+
+.project {
+    background-color: #fff; /* Background color for each project */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    padding: 1rem; /* Padding inside each project */
+}
+
+.project .img img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+.project .title h3 {
+    margin: 1rem 0; /* Margin around title */
+    font-size: 1.5rem; /* Font size for the title */
+}
+
+.project .description p {
+    font-size: 1rem; /* Font size for the description */
+    color: #666; /* Slightly lighter color for text */
+}
+
+.project i {
+    margin: 0.5rem 0; /* Space around icons */
+    margin-top: 1.5rem;
+    margin-right: .7rem;
+    font-size: 1.3rem;
+}
+
+.links{
+    gap: 3rem;
+}
+
+.project a {
+    text-decoration: none; /* Remove underline from links */
+    color: #1f1f1f; /* Link color */
+}
+
+
+.footer {
+    background-color: #1f1f1f; /* Dark background for the footer */
+    color: #fcfcfc; /* Light text color */
+    padding: 2rem; /* Add padding inside the footer */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin: 1rem;
+    flex: 1; /* Ensure sections take equal space */
+    min-width: 200px; /* Minimum width for each section */
+}
+
+.footer-section h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul {
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: #fcfcfc; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 0.5rem;
+    color: #fcfcfc;
+    font-size: 1.5rem; /* Size of the social icons */
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #333; /* Light border on top */
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.875rem; /* Smaller text size for copyright */
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        margin: 0rem;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 3rem; /* Larger heading */
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero h4 {
+        font-size: 1.5rem; /* Subheading */
+        margin-bottom: 0;
+    }
+
+    .section2{
+        padding: 4rem 2rem;
+    }
+    
+    .section2 h3 {
+        font-size: 2rem; /* Larger heading size */
+        margin-bottom: 1.5rem; /* Space below heading */
+    }
+    
+    .section2 p {
+        font-size: 1.15rem; /* Slightly larger than default paragraph text */
+    }
+
+    .interSection2{
+        height: 6.9vh;
+        background-color: #181818; /* Light background for contrast */
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 1fr)); /* Two columns by default, adjusts for smaller screens */
+        gap: 1.5rem; /* Space between items */
+    }
+}

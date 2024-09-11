@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <img
+                src="assets/svg/Logo.svg"
+                alt="logo"
+                width="100px"
+                draggable="false"
+            />
+            <div>
+                <div class="mobileMenu" onclick="toggleMenu()">
+                    <i id="iconMenu" class="fa-solid fa-bars iconMenu"></i>
+    
+                    <i id="iconClose" class="fa-solid fa-xmark iconClose"></i>
+                </div>
+                <div id="menu" class="menu clipPath-Desactive">
+                    <ul>
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">About</a></li>
+                        <li><a href="#section3">Projects</a></li>
+                    </ul>
+                </div>                
+            </div>
+            <ul class="navList">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Projects</a></li>
+            </ul>
+        </nav>
+        <div id="section1">
+            <div class="hero">
+                <h1>I'm <span>Moad</span></h1>
+                <h4>A Fullstack Develloper</h4>
+            </div>
+            <div class="interSection"></div>
+        </div>
+
+        <div id="section2" class="about">
+            <div class="interSection2"></div>
+            <div class="section2">
+                <h3>About me</h3>
+                <p>I'm a passionate and dedicated Fullstack Developer. With a solid foundation in web development, I have honed my skills through various projects and challenges, including participation in hackathons. My journey began with mastering the basics of CSS, and I've since expanded my knowledge to include a wide range of technologies and frameworks.</p>
+            </div>
+        </div>
+
+        <div id="section3" class="section3">
+            <div class="interSection3"></div>
+            <h1>My Projects</h1>
+            <div class="projects">
+                <div class="project">
+                    <div class="img">
+                        <img src="./assets/projects/minesweeper.png" alt="Project 1">
+                    </div>
+                    <div class="title">
+                        <h3>Minesweeper</h3>
+                    </div>
+                    <div class="description">
+                        <p>A classic puzzle game where you clear a grid of hidden mines by uncovering cells and using numbers to deduce their locations. Avoid the mines and use logic to win!</p>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/i-Moad/Minesweeper" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://i-moad.github.io/Minesweeper/" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="img">
+                        <img src="./assets/projects/chatOnline.png" alt="Project 2">
+                    </div>
+                    <div class="title">
+                        <h3>ChatOnline</h3>
+                    </div>
+                    <div class="description">
+                        <p> A streamlined messaging platform where users can chat exclusively with existing accounts.</p>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/i-Moad/chatOnline" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">About</a></li>
+                        <li><a href="#section3">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 All rights reserved.</p>
+            </div>
+        </footer>        
+
+        <script src="./script.js"></script>
+    </body>
+</html>
