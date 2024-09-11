@@ -1,4 +1,4 @@
-# Moad AITIDIR - Profile Website
+# Moad AITIDIR
 
 Welcome to my personal profile website! This website showcases my skills, projects, and experience as a developer. It provides an overview of my journey in programming, as well as a platform to connect and collaborate.
 
